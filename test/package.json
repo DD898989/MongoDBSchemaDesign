@@ -1,0 +1,10 @@
+{
+  "name": "mongodb-schema-design-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js features/**/*.feature --require step_definitions/**/*.js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.4.0"
+  }
+}

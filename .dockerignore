@@ -1,0 +1,7 @@
+node_modules
+test
+.git
+.dockerignore
+.gitignore
+run.bat
+run-tests.bat
