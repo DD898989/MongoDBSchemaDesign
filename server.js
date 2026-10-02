@@ -114,7 +114,7 @@ app.post('/api/patterns/polymorphic/query', async (req, res) => {
 
 app.post('/api/patterns/computed/products', async (req, res) => {
   const prod = await models.ComputedProduct.create({ name: req.body.name, reviewCount: 0, averageRating: 0, totalSales: 0 });
-  res.json(prod);
+  res.json(prod);//                                                                      ^^^^^^^^^^^^^TODO 避免數據失真可改成 totalRating
 });
 
 app.post('/api/patterns/computed/reviews', async (req, res) => {
